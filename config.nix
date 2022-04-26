@@ -4,11 +4,12 @@ with pkgs.lib;
 
 {
 	keymaps = {
-		"shields/corne" = pkgs.fetchgit {
-			url = "https://github.com/diamondburned/zmk-config-corne";
-			rev = "d3db3cac52b7e1a6f9352ab47e6df73f1158a319";
-			sha256 = "1yi88kbsdl7jpj1yv0rrzkp10cfzv3nnf0v9fjfrhmhrv7vyk8vd";
-		} + "/config/corne.keymap";
+		# "shields/corne" = pkgs.fetchgit {
+		# 	url = "https://github.com/diamondburned/zmk-config-corne";
+		# 	rev = "c22619ab76f26a3bf9b0fa14955e10db3c5ac62c";
+		# 	sha256 = "014lb6bv40d627xh9j58vi0516wvwwfqd1mn148pz17jml8kq2mc";
+		# } + "/config/corne.keymap";
+		"shields/corne" = "${../zmk-config-corne/config}/corne.keymap";
 	};
 	build = {
 		board = "nice_nano";
