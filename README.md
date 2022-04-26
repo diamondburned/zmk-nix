@@ -3,6 +3,7 @@
 ```nix
 nix-shell
 build-zmk
+flash-zmk
 ```
 
 ## Configuration
